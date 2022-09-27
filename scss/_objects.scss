@@ -1,0 +1,143 @@
+@import "param";
+
+.objects {
+  margin-bottom: 9rem;
+
+  &__title {
+    margin-bottom: 1.7rem;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    margin-bottom: 1.3rem;
+  }
+
+  &__item {
+    position: relative;
+    flex: 30%;
+    max-width: 40.2rem;
+    min-height: 32.6rem;
+    padding: 11rem 2rem 0 2rem;
+    color: white;
+
+    &:hover {
+      > *:not(:first-child) {
+        transform: translateY(-2rem);
+      }
+    }
+
+    > * {
+      transition: transform .2s ease;
+    }
+  }
+
+  &__item-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__item-title {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.04em;
+  }
+
+  &__item-price {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__item-tag {
+    width: fit-content;
+    margin-left: -2rem;
+    padding: 0.6rem 2rem 0.6rem 1.5rem;
+    background-color: $red;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    padding: 1.4rem 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .objects {
+    margin-bottom: 12rem;
+
+    &__title {
+      text-align: left;
+    }
+
+    &__cards {
+      gap: 4rem;
+      margin-bottom: 4.8rem;
+    }
+
+    &__item {
+      flex: 100%;
+      max-width: none;
+      min-height: 65.2rem;
+      padding: 21rem 4rem 0 4rem;
+    }
+
+    &__item-bg {
+    }
+
+    &__item-title {
+      margin-bottom: 0.8rem;
+      font-size: 4.8rem;
+      line-height: 5.8rem;
+    }
+
+    &__item-price {
+      margin-bottom: 6.4rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__item-tag {
+      margin-left: -4rem;
+      padding: 1.6rem 4.8rem 1.6rem 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__btn {
+      padding: 2rem 3.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+}

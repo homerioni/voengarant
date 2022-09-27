@@ -1,0 +1,134 @@
+@import "param";
+
+.app {
+  margin-bottom: 5rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 15rem 6rem 5rem;
+    background-color: #EDEDED;
+  }
+
+  &__info-block {
+    width: 36.1rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__list {
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__list-item {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__downloads {
+    display: flex;
+  }
+
+  &__link-img {
+    display: block;
+    width: 12.7rem;
+    height: 3.8rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__img-box {
+    align-self: flex-end;
+    width: 59.4rem;
+    height: 40.5rem;
+    margin: -3rem 0 -6rem 0;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .app {
+    margin-bottom: 12rem;
+
+    &__content {
+      display: block;
+      padding: 5.6rem 4rem 0 4rem;
+    }
+
+    &__info-block {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 1.2rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__list {
+      padding-left: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    &__list-item {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__downloads {
+      display: block;
+    }
+
+    &__link-img {
+      width: 25.4rem;
+      height: 7.6rem;
+
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 2.4rem;
+      }
+
+      > img {
+        object-position: left;
+      }
+    }
+
+    &__img-box {
+      align-self: flex-end;
+      width: auto;
+      height: 40.4rem;
+      margin: -12rem -5rem 0 -4rem;
+
+      > img {
+        width: auto;
+        margin-left: auto;
+        object-position: right bottom;
+      }
+    }
+  }
+}

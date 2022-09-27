@@ -1,0 +1,163 @@
+@import "param";
+
+.dis-slider {
+  margin-bottom: 6.5rem;
+
+  &__content {
+    padding: 3rem 0;
+    margin-bottom: 1.6rem;
+    background-color: white;
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-box {
+    width: 6.6rem;
+    height: 6.6rem;
+    margin-right: 1.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text-box {
+    width: 34rem;
+  }
+
+  &__item-title {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.04em;
+  }
+
+  &__item-desc {
+    margin-bottom: 1.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__item-link {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $purple;
+
+    &:hover {
+      color: $purple-hover;
+    }
+  }
+
+  &__img-box {
+    width: 60.5rem;
+    height: 100%;
+    margin-left: auto;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .dis-slider__pagination {
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin: 0 1.5rem;
+      border-radius: 100%;
+      background-color: white;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $purple;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .dis-slider {
+    margin-bottom: 17rem;
+
+    &__content {
+      padding: 0;
+      margin-bottom: 3rem;
+      background-color: transparent;
+    }
+
+    &__slider {
+      padding: 0 4rem;
+      margin: 0 -4rem;
+    }
+
+    &__slide {
+      flex-direction: column;
+      align-items: normal;
+      padding: 4rem;
+      background-color: white;
+    }
+
+    &__icon-block {
+      order: 2;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    &__icon-box {
+      width: 8rem;
+      height: 8rem;
+      margin-right: 3rem;
+    }
+
+    &__text-box {
+      order: 3;
+      width: 100%;
+    }
+
+    &__item-title {
+      margin-bottom: 0;
+      transform: translateY(0.4rem);
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__item-desc {
+      margin-bottom: 3rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__item-link {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__img-box {
+      order: 1;
+      width: 100%;
+      height: 19rem;
+      margin-bottom: 5rem;
+    }
+
+    .dis-slider__pagination {
+      .swiper-pagination-bullet {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0 2rem;
+      }
+    }
+  }
+}

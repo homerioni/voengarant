@@ -1,0 +1,175 @@
+@import "param";
+
+.contacts {
+  margin-bottom: 6rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8.5rem 19.5rem 8.5rem 5rem;
+    background-color: white;
+  }
+
+  &__text-block {
+    width: 40rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__item-img-box {
+    flex: none;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-info-box {
+  }
+
+  &__item-name {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__item-text {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  &__link-block {
+    width: 22.7rem;
+  }
+
+  &__link-item {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__link-img-box {
+    width: 10rem;
+    height: 6.6rem;
+    margin-bottom: 1.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+
+  &__link-text {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $purple;
+  }
+}
+
+@media (max-width: 48em) {
+  .contacts {
+    margin-bottom: 12rem;
+
+    &__content {
+      display: block;
+      padding: 5.6rem 4rem;
+    }
+
+    &__text-block {
+      width: 100%;
+      margin-bottom: 5.6rem;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__item-img-box {
+      width: 7rem;
+      height: 7rem;
+      margin-right: 2.4rem;
+    }
+
+    &__item-info-box {
+    }
+
+    &__item-name {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__item-text {
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+    }
+
+    &__link-block {
+      width: 100%;
+    }
+
+    &__link-item {
+      display: flex;
+    }
+
+    &__link-img-box {
+      flex: none;
+      width: 12rem;
+      height: 12rem;
+      margin-bottom: 0;
+      margin-right: 3.2rem;
+
+      > img {
+        object-position: top;
+      }
+    }
+
+    &__link-text {
+      margin-bottom: 3.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__link {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+}

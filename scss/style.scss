@@ -1,0 +1,86 @@
+@import "set";
+@import "components";
+
+@import "header";
+@import "footer";
+@import "filter";
+@import "modal";
+@import "bank-req";
+@import "intro-filter";
+@import "navigation";
+@import "discounts";
+@import "dis-slider";
+@import "catalog";
+@import "consultation";
+@import "news-min";
+@import "messages-min";
+@import "how-get";
+@import "discount-intro";
+@import "discount-desc";
+@import "city-filter";
+@import "banks-info";
+@import "banks";
+@import "builder";
+@import "objects";
+@import "reviews-slider";
+@import "info";
+@import "rating";
+@import "catalog-slider";
+@import "article";
+@import "rating-min";
+@import "services";
+@import "news-sidebar";
+@import "product-intro";
+@import "product-slider";
+@import "layouts";
+@import "price";
+@import "bank-intro";
+@import "bank-calculate";
+@import "discount-sidebar";
+@import "news";
+@import "news-category";
+@import "consulting";
+@import "intro";
+@import "mortgage-intro";
+@import "stages";
+@import "mortgage-info";
+@import "interaction-intro";
+@import "messages";
+@import "best";
+@import "support";
+@import "app";
+@import "reviews";
+@import "feedback";
+@import "discounts-page";
+@import "contacts";
+@import "map";
+@import "qa";
+@import "account";
+@import "refferal";
+@import "profile";
+@import "add-apartment";
+@import "acc-consultation";
+@import "how-build";
+@import "complexity";
+
+
+
+body.lock {
+  overflow: hidden;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+
+  .container--wide {
+    width: 168rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,201 @@
+@import "param";
+
+.product-intro {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 60.5rem;
+    padding: 3.6rem 4rem;
+  }
+}
+
+.dealer {
+  background-color: white;
+
+  &__item-title {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__company-logo {
+    flex: none;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__company-name {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__text-box {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &--light {
+      font-weight: 300;
+    }
+  }
+
+  &__price-box {
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $purple;
+  }
+
+  &__price-text {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+.offer {
+  background-color: $purple;
+  color: white;
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__btn {
+    width: fit-content;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .product-intro {
+    margin-bottom: 12rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  .dealer {
+    &__item-title {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__company {
+      margin-bottom: 2.4rem;
+    }
+
+    &__company-logo {
+      margin-right: 1.6rem;
+    }
+
+    &__company-name {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text-box {
+      margin-bottom: 4.8rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &__price-box {
+    }
+
+    &__price {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__price-text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+
+  .offer {
+    &__box {
+      &:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 0.8rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__btn {
+      padding: 0 8rem;
+      margin-top: 4.8rem;
+    }
+  }
+}

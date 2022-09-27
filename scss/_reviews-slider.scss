@@ -1,0 +1,106 @@
+@import "param";
+
+.reviews-slider {
+  margin-bottom: 8rem;
+
+  &__container {
+    position: relative;
+  }
+
+  &__slider {
+    min-height: 30rem;
+    overflow: hidden;
+  }
+
+  &__slide {
+    padding: 2.5rem 2.5rem 5rem 1.5rem;
+    background-color: white;
+  }
+
+  &__title-box {
+    padding-left: 3rem;
+    margin-bottom: 1.7rem;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__navigation {
+    .prev {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    .next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 1;
+      transform: translate(50%, -50%);
+    }
+
+    .swiper-button-disabled {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .reviews-slider {
+    margin-bottom: 12rem;
+
+    &__container {
+    }
+
+    &__slider {
+      min-height: 50rem;
+      margin: 0 -4rem;
+      padding: 0 4rem;
+    }
+
+    &__slide {
+      padding: 5.6rem 4rem;
+    }
+
+    &__title-box {
+      padding-left: 0;
+      margin-bottom: 2.4rem;
+    }
+
+    &__name {
+      margin-bottom: 0.8rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__date {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__navigation {
+    }
+  }
+}

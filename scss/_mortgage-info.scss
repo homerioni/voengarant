@@ -1,0 +1,216 @@
+@import "param";
+
+.mortgage-info {
+  margin-bottom: 10rem;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 83rem;
+    padding: 4rem 10rem 6rem 4rem;
+    background-color: white;
+
+    &:nth-child(even) {
+      width: 40rem;
+      padding-right: 4rem;
+    }
+
+    &--img-bottom {
+      padding-bottom: 0;
+    }
+
+    &--gray {
+      background-color: #EFEFEF;
+    }
+  }
+
+  &__text-box {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &:first-child {
+      .mortgage-info__title {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    > *:not(:last-child, .mortgage-info__bg) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+
+  &__list {
+    padding-left: 1.6rem;
+    margin: 0;
+  }
+
+  &__list-item {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__bg {
+    width: 32.7rem;
+    height: 22.5rem;
+    margin-left: auto;
+    margin-right: -4rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+  &__icon-box {
+    width: 9.3rem;
+    height: 10.2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__logo {
+    width: 12.4rem;
+    height: 7.4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__btn {
+    width: fit-content;
+    min-width: 23rem;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .mortgage-info {
+    margin-bottom: 12rem;
+
+    &__container {
+      row-gap: 4rem;
+    }
+
+    &__item {
+      width: 100%;
+      padding: 5.6rem 4rem;
+
+      &:nth-child(even) {
+        width: 100%;
+      }
+
+      &--img-bottom {
+        padding-bottom: 0;
+      }
+    }
+
+    &__text-box {
+      &:first-child {
+        .mortgage-info__title {
+          margin-bottom: 2.4rem;
+        }
+      }
+
+      > *:not(:last-child, .mortgage-info__bg) {
+        margin-bottom: 1.6rem;
+      }
+
+      > .mortgage-info__title:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 2.4rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__list {
+      padding-left: 2.6rem;
+    }
+
+    &__list-item {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__bg {
+      width: 60rem;
+      height: 40rem;
+      margin-top: 2rem;
+    }
+
+    &__icon-box {
+      width: 13rem;
+      height: 14rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &__sub-title {
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__logo {
+      width: 15.6rem;
+      height: 9.6rem;
+      margin-bottom: 3.2rem;
+      margin-top: 0;
+    }
+
+    &__btn {
+      min-width: auto;
+      padding: 0 3rem;
+      font-size: 2.6rem;
+    }
+  }
+}

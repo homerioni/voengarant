@@ -1,0 +1,103 @@
+@import "param";
+
+.acc-consultation {
+  margin-bottom: 6rem;
+
+  &__content {
+    padding: 5rem 4rem;
+    background-color: white;
+  }
+
+  &__title {
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__desc {
+    width: 59rem;
+    margin-bottom: 3.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    &--form {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  &__form {
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 15.7rem;
+    padding: 1.3rem 2.2rem;
+    border: 1px solid $gray;
+    resize: none;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    &::placeholder {
+      color: #DCDCDC;
+    }
+  }
+
+  &__btn {
+    min-width: 21.3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .acc-consultation {
+    margin-bottom: 12rem;
+
+    &__content {
+      padding: 5.6rem 4rem;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__desc {
+      width: 100%;
+      margin-bottom: 3.6rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+
+      &--form {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &__form {
+    }
+
+    &__label {
+    }
+
+    &__textarea {
+      height: 32.4rem;
+      padding: 2.4rem 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__btn {
+      min-width: auto;
+      padding: 0 4rem;
+      font-size: 2.6rem;
+    }
+  }
+}

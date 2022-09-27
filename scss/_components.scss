@@ -1,0 +1,154 @@
+@import "param";
+
+.btn-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15.8rem;
+  height: 4.6rem;
+  padding: 0 1rem;
+  background-color: $red;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+
+  &:hover {
+    background-color: $red-hover;
+  }
+}
+
+.btn-purple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 15.8rem;
+  height: 4.6rem;
+  padding: 0 2rem;
+  background-color: $purple;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+
+  &:hover {
+    background-color: $purple-hover;
+  }
+}
+
+.feedback-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 22rem;
+  margin: 7rem auto 0 auto;
+  height: 4.8rem;
+  padding: 0 2rem;
+}
+
+.nav-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  background-color: white;
+  transition: opacity .2s ease;
+
+  > svg {
+    width: 1.7rem;
+    height: 3.1rem;
+
+    path {
+      fill: #3D3D3D;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 3rem 2px rgba(0, 0, 0, 0.15);
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0;
+  }
+}
+
+.news-nav {
+  margin-bottom: 4rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19rem;
+    height: auto;
+    min-height: 4.3rem;
+    padding: 0 2rem;
+    background-color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #DCDCDC;
+
+    &:hover,
+    &.active {
+      color: #3D3D3D;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .btn-red {
+    min-width: 22.4rem;
+    height: 7.2rem;
+    padding: 0 4rem;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+  }
+
+  .btn-purple {
+    min-width: 22.4rem;
+    height: 7.2rem;
+    padding: 0 4rem;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+  }
+
+  .feedback-btn {
+    min-width: 35.6rem;
+    margin-top: 4.8rem;
+    height: 7.2rem;
+    padding: 0 4rem;
+  }
+
+  .news-nav {
+    margin-bottom: 6.4rem;
+
+    &__container {
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &__item {
+      flex: none;
+      width: fit-content;
+      min-height: auto;
+      padding: 1.6rem 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+
+      &:not(:last-child) {
+        margin-right: 4.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страницы</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Стили для этой странички-->
+    <style>
+        body {
+            padding: 10rem 0;
+            background: rgba(20, 20, 20, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            position: relative;
+            padding: 4rem 5rem;
+            display: block;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            width: 80rem;
+            overflow: hidden;
+            border-radius: 100rem;
+        }
+
+        a:nth-child(even) {
+            transform: translateX(10%);
+        }
+
+        a:nth-child(odd) {
+            transform: translateX(-10%);
+        }
+
+        a span {
+            position: relative;
+            display: block;
+            text-align: center;
+            color: #fff;
+            font-size: 3.4rem;
+            z-index: 1;
+            text-shadow: 0 0 1rem rgba(0, 0, 0, 1),
+            0 0 2rem rgba(0, 0, 0, 1),
+            0 0 3rem rgba(0, 0, 0, 1);
+        }
+
+        a div {
+            position: absolute;
+            top: -35rem;
+            left: 0;
+            width: 100%;
+            height: 80rem;
+            background: #4973ff;
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+        }
+        a:nth-child(3n) div {
+            background: #a100ff;
+        }
+        a:nth-child(3n - 1) div {
+            background: #ff35ee;
+        }
+
+        a div::after,
+        a div::before {
+            content: '';
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            background: #000;
+        }
+
+        a div::before {
+            border-radius: 45%;
+            background: rgba(20, 20, 20, 1);
+            animation: animate 5s linear infinite;
+        }
+
+        a div::after {
+            border-radius: 40%;
+            background: rgba(20, 20, 20, 0.5);
+            animation: animate 10s linear infinite;
+        }
+
+        a:hover div {
+            transform: translateY(-15rem);
+        }
+
+        @media (max-width: 48em) {
+            a {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+
+            a:nth-child(n) {
+                transform: translateX(0);
+            }
+
+            a div {
+                top: -32rem;
+                height: 75rem;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translate(-50%, -75%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -75%) rotate(360deg);
+            }
+        }
+    </style>
+    <!--/Стили для этой странички-->
+</head>
+<body>
+
+<a href="./main.html" target="_blank">
+    <span>Главная</span>
+    <div></div>
+</a>
+<a href="./discount.html" target="_blank">
+    <span>Скидка от Военгаранта</span>
+    <div></div>
+</a>
+<a href="./builder.html" target="_blank">
+    <span>Застройщик подробно</span>
+    <div></div>
+</a>
+<a href="./ratings.html" target="_blank">
+    <span>Рейтинг застройщиков</span>
+    <div></div>
+</a>
+<a href="./buildings-military.html" target="_blank">
+    <span>Новостройки по военной ипотеке</span>
+    <div></div>
+</a>
+<a href="./secondary.html" target="_blank">
+    <span>Квартиры вторичка</span>
+    <div></div>
+</a>
+<a href="./product-page.html" target="_blank">
+    <span>Карточка объекта</span>
+    <div></div>
+</a>
+<a href="./banks.html" target="_blank">
+    <span>Банки</span>
+    <div></div>
+</a>
+<a href="./bank.html" target="_blank">
+    <span>Карточка банка</span>
+    <div></div>
+</a>
+<a href="./article.html" target="_blank">
+    <span>Карточка статьи</span>
+    <div></div>
+</a>
+<a href="./news.html" target="_blank">
+    <span>Статьи</span>
+    <div></div>
+</a>
+<a href="./military-mortgage-again.html" target="_blank">
+    <span>Военная ипотека повторно</span>
+    <div></div>
+</a>
+<a href="./interaction.html" target="_blank">
+    <span>Взаимодействие</span>
+    <div></div>
+</a>
+<a href="./legal-services.html" target="_blank">
+    <span>Юридические услуги</span>
+    <div></div>
+</a>
+<a href="./about.html" target="_blank">
+    <span>О проекте</span>
+    <div></div>
+</a>
+<a href="./reviews.html" target="_blank">
+    <span>Отзывы</span>
+    <div></div>
+</a>
+<a href="./discounts.html" target="_blank">
+    <span>Акции</span>
+    <div></div>
+</a>
+<a href="./contacts.html" target="_blank">
+    <span>Контакты</span>
+    <div></div>
+</a>
+<a href="./qa.html" target="_blank">
+    <span>Вопросы и ответы</span>
+    <div></div>
+</a>
+<a href="./account-reviews.html" target="_blank">
+    <span>ЛК. Отзывы</span>
+    <div></div>
+</a>
+<a href="./account-referral.html" target="_blank">
+    <span>ЛК. Приведи друга</span>
+    <div></div>
+</a>
+<a href="./account-profile.html" target="_blank">
+    <span>ЛК. Профиль</span>
+    <div></div>
+</a>
+<a href="./account-add-apartment.html" target="_blank">
+    <span>ЛК. Продажа квартиры</span>
+    <div></div>
+</a>
+<a href="./account-consultation.html" target="_blank">
+    <span>ЛК. Консультация</span>
+    <div></div>
+</a>
+<a href="./custom-house.html" target="_blank">
+    <span>Дом на заказ</span>
+    <div></div>
+</a>
+<a href="./execution.html" target="_blank">
+    <span>Оформление сделки</span>
+    <div></div>
+</a>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

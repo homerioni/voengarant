@@ -1,0 +1,660 @@
+@import "param";
+
+.info {
+  margin-bottom: 11rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    gap: 3rem;
+  }
+}
+
+.desc-box {
+  flex: auto;
+  width: 100%;
+  padding: 4.6rem 5rem;
+  background-color: white;
+
+  &__title {
+    margin-bottom: 3.5rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}
+
+.mortgage-box {
+  height: 60.9rem;
+  padding: 4.6rem 5rem;
+  background-color: white;
+
+  &--big {
+    height: 76.3rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.03em;
+  }
+
+  &__label-title {
+    margin-bottom: 0.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 41.8rem;
+    height: 4.2rem;
+    margin-bottom: 5rem;
+    border: 1px solid #3D3D3D;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__select {
+    width: 100%;
+    height: 100%;
+    padding: 0 3.5rem 0 2rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8rem;
+    height: 0.7rem;
+
+    path {
+      fill: #3D3D3D;
+    }
+  }
+
+  &__img-box {
+    width: 34rem;
+    margin-bottom: 2rem;
+
+    > img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text-box {
+    margin-bottom: 1.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $purple;
+
+    &:hover {
+      color: $purple-hover;
+    }
+  }
+}
+
+.product-form {
+  padding: 6.7rem 5.8rem 7.8rem 4rem;
+  background-color: white;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__desc {
+    margin-bottom: 2.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__label-box {
+    margin-bottom: 1rem;
+  }
+
+  &__label-name {
+    margin-bottom: 0.4rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    height: 4.3rem;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 2.2rem;
+    border: 1px solid #BBBBBB;
+    font-weight: 300;
+    font-size: 1.8rem;
+
+    &:focus {
+      border: 1px solid #6D78E2;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem 4.6rem;
+    margin-top: 3rem;
+  }
+}
+
+.info-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 88.7rem;
+  padding: 9rem 4rem;
+
+  &__img-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__title {
+    width: 27rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.03em;
+    color: white;
+  }
+}
+
+.complex {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem 0 4rem;
+  background-color: white;
+
+  &__title {
+    margin-bottom: 5rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__content {
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__item-icon {
+    flex: none;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-right: 2.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__slider-box {
+    position: relative;
+    margin: auto -4rem 0 -4rem;
+
+    .prev {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%) scaleX(-1);
+    }
+
+    .next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 1;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    width: 100%;
+    height: 28rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.product-req {
+  padding: 5rem 4rem;
+  background-color: $purple;
+  color: white;
+
+  &__title {
+    margin-bottom: 3.5rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__form {
+    margin-bottom: 4.4rem;
+  }
+
+  &__label-box {
+    margin-bottom: 1.8rem;
+  }
+
+  &__label-name {
+    margin-bottom: 2px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    height: 4.3rem;
+    background-color: #9EB5F5;
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+    &:focus {
+      border: 1px solid #FFFFFF;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 3rem;
+    padding: 1.2rem 4.6rem;
+    background-color: white;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $purple;
+  }
+
+  &__text-box {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .info {
+    margin-bottom: 12rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__box {
+      display: block;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      > *:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  .desc-box {
+    padding: 4rem;
+    min-height: 80rem;
+
+    > *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &__title {
+      margin-bottom: 3.2rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+
+  .mortgage-box {
+    height: auto;
+    min-height: 80rem;
+    padding: 4rem;
+
+    &--big {
+      height: auto;
+    }
+
+    &__title {
+      margin-bottom: 3.2rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__label-title {
+      margin-bottom: 1.6rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__label {
+      width: 100%;
+      height: 7.2rem;
+      margin-bottom: 3.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__select {
+      padding: 0 6rem 0 3.2rem;
+    }
+
+    &__select-arrow {
+      right: 3.2rem;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+
+    &__img-box {
+      width: 50rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &__text-box {
+      margin-bottom: 3.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__link {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+
+  .product-form {
+    padding: 4rem;
+
+    &__title {
+      margin-bottom: 2.4rem;
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__desc {
+      margin-bottom: 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__label-box {
+      margin-bottom: 4rem;
+    }
+
+    &__label-name {
+      margin-bottom: 1.6rem;
+      font-weight: 400;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__label {
+      height: 9.6rem;
+    }
+
+    &__input {
+      padding: 0 4rem;
+      font-size: 2.6rem;
+    }
+
+    &__btn {
+      padding: 2.4rem 5rem;
+      margin-top: 5rem;
+    }
+  }
+
+  .info-img {
+    height: 53.2rem;
+    padding: 3.2rem;
+
+    &__img-box {
+    }
+
+    &__title {
+      width: 30rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+
+  .complex {
+    &:not(:last-child) {
+      margin-bottom: 12rem;
+    }
+
+    &__title {
+      margin-bottom: 3.2rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__content {
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &__item-icon {
+      width: 4rem;
+      height: 3.2rem;
+      margin-right: 2.4rem;
+    }
+
+    &__item-text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__slider-box {
+    }
+
+    &__slider {
+    }
+
+    &__slide {
+      height: 31rem;
+    }
+
+    &__pagination {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 3.2rem);
+      text-align: center;
+
+      .swiper-pagination-bullet {
+        width: 2.2rem;
+        height: 2.2rem;
+        //margin: 0 1rem !important;
+        border-radius: 100%;
+        background-color: white;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $purple;
+      }
+    }
+  }
+
+  .product-req {
+    padding: 4.8rem 4rem 4rem 4rem;
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+    }
+
+    &__form {
+      margin-bottom: 4rem;
+    }
+
+    &__label-box {
+      margin-bottom: 4rem;
+    }
+
+    &__label-name {
+      margin-bottom: 1.6rem;
+      font-weight: 400;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__label {
+      height: 9.6rem;
+    }
+
+    &__input {
+      padding: 0 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__btn {
+      margin-top: 5rem;
+      padding: 2.2rem 5.4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text-box {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__text-title {
+      margin-bottom: 0.8rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+}

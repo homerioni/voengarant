@@ -1,0 +1,111 @@
+@import "param";
+
+.bank-intro {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem 0 6rem;
+    background-color: #EDEDED;
+  }
+
+  &__logo {
+    width: 17.1rem;
+    height: 17.1rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__info-block {
+    width: 25rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    opacity: 0.4;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  &__text-box {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__bg {
+    align-self: flex-end;
+    height: 28rem;
+    width: 54rem;
+    mix-blend-mode: darken;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .bank-intro {
+    &__content {
+      flex-wrap: wrap;
+      padding: 0 4rem;
+      margin: 0 -4rem;
+    }
+
+    &__logo {
+      width: 28.6rem;
+      height: 28.6rem;
+    }
+
+    &__info-block {
+      width: 35rem;
+    }
+
+    &__title {
+      margin-bottom: 4.4rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__btn {
+      height: 7.2rem;
+      margin-bottom: 2.4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text-box {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+
+      > *:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &__bg {
+      height: 34rem;
+      width: 100%;
+    }
+  }
+}

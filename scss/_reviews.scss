@@ -1,0 +1,120 @@
+@import "param";
+
+.reviews {
+  margin-bottom: 8rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    width: 83rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    min-height: 13.3rem;
+    padding: 2rem 4rem;
+    background-color: white;
+
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__info-block {
+    flex: none;
+    width: 14rem;
+  }
+
+  &__name {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__city {
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #DCDCDC;
+  }
+
+  &__text {
+    padding: 2rem 0 2rem 4rem;
+    margin-left: 4rem;
+    border-left: 1px solid #DCDCDC;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__sidebar {
+    width: 39.5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .reviews {
+    margin-bottom: 12rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__list {
+      width: 100%;
+      margin-bottom: 12rem;
+    }
+
+    &__item {
+      align-items: normal;
+      min-height: auto;
+      padding: 2.4rem 4rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__info-block {
+      width: 19rem;
+    }
+
+    &__name {
+      margin-bottom: 0.8rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__city {
+      margin-bottom: 0.8rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__date {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__text {
+      padding: 1rem 0 1rem 3.6rem;
+      margin-left: 1.4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__sidebar {
+      width: 100%;
+    }
+  }
+}

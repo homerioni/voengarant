@@ -1,0 +1,183 @@
+@import "param";
+
+.city-filter {
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+
+  &--wide {
+    margin-top: 6rem;
+    margin-bottom: 6.5rem;
+
+    .city-filter__content {
+      padding: 7.5rem 6.5rem;
+    }
+
+    .city-filter__bg {
+      right: 10rem;
+      width: 85rem;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 6.5rem 4.4rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #EDEDED;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    z-index: -1;
+    width: 64rem;
+    height: 29.4rem;
+    max-height: 95%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+  &__title {
+    width: 57rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  &__form {
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 37rem;
+    height: 4.8rem;
+    background-color: white;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__select-icon {
+    position: absolute;
+    left: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 2.2rem;
+
+    path {
+      stroke: #3D3D3D;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    height: 100%;
+    padding: 0 4.2rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.9rem;
+    height: 0.8rem;
+
+    path {
+      fill: #3D3D3D;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .city-filter {
+    margin-bottom: 12rem;
+    margin-top: 3.2rem;
+
+    &--wide {
+      .city-filter__content {
+        padding: 4rem 4rem 0 4rem;
+      }
+
+      .city-filter__bg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__content {
+      padding: 4rem 4rem 0 4rem;
+      margin: 0 -4rem;
+    }
+
+    &__bg {
+      position: static;
+      width: 100%;
+      height: auto;
+
+      > img {
+        height: auto;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 3.2rem;
+    }
+
+    &__form {
+      margin-bottom: 4.8rem;
+    }
+
+    &__label {
+      width: 100%;
+      height: 9.6rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__select-icon {
+      left: 3rem;
+      width: 3rem;
+      height: 3.6rem;
+    }
+
+    &__select {
+      padding: 0 8rem;
+    }
+
+    &__select-arrow {
+      right: 4rem;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+}

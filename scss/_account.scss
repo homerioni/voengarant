@@ -1,0 +1,156 @@
+@import "param";
+
+.account {
+  position: relative;
+  margin-bottom: 8rem;
+  padding-top: 13rem;
+
+  &__user-info {
+    position: absolute;
+    right: 13.7rem;
+    top: 0;
+    min-width: 43.6rem;
+    max-width: 55rem;
+    padding: 0.8rem 5rem 0.8rem 2.8rem;
+    border: 1px solid $gray;
+    background-color: white;
+  }
+
+  &__username {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    .gray {
+      flex: none;
+      margin-right: 1.5rem;
+      color: $gray;
+    }
+  }
+
+  &__user-status {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    &--purple {
+      color: $purple;
+    }
+
+    &--red {
+      color: $red;
+    }
+
+    .gray {
+      flex: none;
+      margin-right: 1.5rem;
+      color: $gray;
+    }
+  }
+
+  &__logout {
+    position: absolute;
+    right: 2.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    > svg {
+      width: 2.1rem;
+      height: 1.8rem;
+
+      path {
+        stroke: $gray;
+      }
+    }
+
+    &:hover {
+      > svg path {
+        stroke: #3D3D3D;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-item {
+    > a {
+      display: block;
+      padding: 1.2rem 4rem;
+      background-color: white;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: $gray;
+
+      &:hover {
+        color: #3D3D3D;
+      }
+    }
+
+    &.active {
+      > a {
+        color: #3D3D3D;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .account {
+    margin-bottom: 6.4rem;
+    padding-top: 18.4rem;
+
+    &__user-info {
+      right: 4rem;
+      min-width: auto;
+      max-width: 65rem;
+      padding: 2.4rem 11rem 2.4rem 4rem;
+    }
+
+    &__username {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__user-status {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__logout {
+      right: 4rem;
+
+      > svg {
+        width: 4.2rem;
+        height: 3.6rem;
+      }
+    }
+
+    &__navigation {
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &__nav-item {
+      flex: none;
+
+      > a {
+        padding: 1.6rem 8rem;
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 4.8rem;
+      }
+    }
+  }
+}

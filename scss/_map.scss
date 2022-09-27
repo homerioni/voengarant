@@ -1,0 +1,96 @@
+.map {
+  margin-bottom: 6rem;
+
+  .ymaps-2-1-79-image,
+  .ymaps-2-1-79-image-with-content {
+    background-color: white;
+    border-radius: 100%;
+    background-size: 65% !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+  }
+
+  &__content {
+    height: 77rem;
+    margin-bottom: 2rem;
+  }
+
+  &__list-block {
+    padding: 6rem 8rem;
+    background-color: white;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+  }
+
+  &__list-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    width: 100%;
+    column-count: 3;
+  }
+
+  &__list-item {
+    > a {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: $gray;
+
+      &:hover {
+        color: #3D3D3D;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .map {
+    margin-bottom: 12rem;
+
+    &__content {
+      height: 65rem;
+      margin-bottom: 4rem;
+    }
+
+    &__list-block {
+      padding: 5.6rem 4rem;
+    }
+
+    &__title {
+      margin-bottom: 2.4rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__list-box {
+    }
+
+    &__list {
+      width: 100%;
+      column-count: 1;
+    }
+
+    &__list-item {
+      > a {
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}

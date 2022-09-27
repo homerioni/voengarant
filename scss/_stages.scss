@@ -1,0 +1,155 @@
+@import "param";
+
+.stages {
+  margin-bottom: 10rem;
+
+  &__title {
+    margin-bottom: 3.5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 7.7rem;
+    margin-bottom: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+  }
+
+  &__item {
+    width: 14.6rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+
+    > *:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+
+    &--time {
+      margin-top: 2rem;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+
+    &:nth-child(1) {
+      margin-right: 4rem;
+    }
+
+    &:nth-child(2) {
+      margin-right: 5.5rem;
+    }
+
+    &:nth-child(3) {
+      margin-right: 2.7rem;
+    }
+
+    &:nth-child(4) {
+      margin-right: 4rem;
+    }
+
+    &:nth-child(5) {
+      width: 15.6rem;
+      margin-right: 2rem;
+    }
+
+    &:nth-child(6) {
+      width: 16.7rem;
+    }
+
+    &:nth-child(7) {
+      width: 11.3rem;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .stages {
+    margin-bottom: 12rem;
+
+    &__title {
+      margin-bottom: 3.2rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__content {
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &__img-box {
+      width: 175.6rem;
+      height: 10.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    &__text-block {
+      display: flex;
+    }
+
+    &__item {
+      flex: none;
+      width: 24rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+
+      > *:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+
+      &--time {
+        margin-top: 2.4rem;
+        font-size: 3.6rem;
+        line-height: 4.3rem;
+      }
+
+      &:nth-child(1) {
+        margin-right: 2rem;
+      }
+
+      &:nth-child(2) {
+        margin-right: 5rem;
+      }
+
+      &:nth-child(3) {
+        width: 20rem;
+        margin-right: 4rem;
+      }
+
+      &:nth-child(4) {
+        width: 22rem;
+        margin-right: 3.5rem;
+      }
+
+      &:nth-child(5) {
+        width: 22rem;
+        margin-right: 3.5rem;
+      }
+
+      &:nth-child(6) {
+        width: 26rem;
+        margin-right: 4rem;
+      }
+
+      &:nth-child(7) {
+        width: 20rem;
+      }
+    }
+  }
+}

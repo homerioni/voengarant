@@ -1,0 +1,110 @@
+@import "param";
+
+.consulting {
+  margin-bottom: 12rem;
+
+  &--intro {
+    margin-top: 4rem;
+
+    .consulting__container + div {
+      margin-top: 3rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 61.2rem;
+    height: auto;
+    min-height: 47.5rem;
+    padding: 6.2rem 6.8rem 21.2rem 4rem;
+    background-color: white;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__desc {
+    position: relative;
+    width: 33rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__btn {
+    position: relative;
+    width: fit-content;
+    min-width: 16rem;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .consulting {
+    &--intro {
+      .consulting__container + div {
+        margin-top: 12rem;
+      }
+    }
+
+    &__container {
+      row-gap: 4rem;
+    }
+
+    &__item {
+      width: 100%;
+      min-height: 71.6rem;
+      padding: 5.6rem 4rem;
+    }
+
+    &__bg {
+    }
+
+    &__title {
+      margin-bottom: 1.6rem;
+      font-size: 4rem;
+      line-height: 4.8rem;
+    }
+
+    &__desc {
+      width: 37.4rem;
+      margin-bottom: 4rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+
+    &__btn {
+      min-width: 25.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+    }
+  }
+}
