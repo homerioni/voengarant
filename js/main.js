@@ -186,13 +186,32 @@ $(document).ready(function () {
     });
 
     // Account mobile scroll for active nav
-    $('.account__navigation').animate({
-        scrollLeft: $(".account__nav-item.active").offset().left - 20 // класс объекта к которому приезжаем
-    }, 0);
+    if ($('.account__navigation').length) {
+        $('.account__navigation').animate({
+            scrollLeft: $(".account__nav-item.active").offset().left - 20 // класс объекта к которому приезжаем
+        }, 0);
+    }
 
     // Account checkbox
     $('.profile__checkbox-box input').change(function () {
         $(this).parent().toggleClass('active');
+    });
+
+    // Header search
+    $('.header__search').click(function () {
+        $(this).addClass('active');
+        $('body').addClass('lock');
+        $('.header__search-form').show('slide', {direction:'right'});
+        $('.header__search-content').slideDown();
+        setTimeout(function () {
+            $('.header__search-label input').focus();
+        }, 400)
+    });
+    $('.header__search-close').click(function () {
+        $('.header__search').removeClass('active');
+        $('body').removeClass('lock');
+        $('.header__search-form').hide('slide', {direction:'right'});
+        $('.header__search-content').slideUp();
     });
 
 });
