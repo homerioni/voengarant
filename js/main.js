@@ -51,10 +51,27 @@ $(document).ready(function () {
     $('.modal .close').click(function () {
         $('body').removeClass('lock');
         $(this).parents('.modal').hide();
+        $('.modal__content > *').removeAttr('style');
     });
     $('.popup-map').click(function () {
         $('body').addClass('lock');
         $('.modal-map').css('display', 'flex').hide().fadeIn();
+    });
+    $('.popup-feedback').click(function () {
+        $('body').addClass('lock');
+        $('.modal-feedback').css('display', 'flex').hide().fadeIn();
+    });
+    $('.popup-consultation').click(function () {
+        $('body').addClass('lock');
+        $('.modal-consultation').css('display', 'flex').hide().fadeIn();
+    });
+    $('.modal-feedback__send').click(function () {
+        $('.modal-feedback__form').hide();
+        $('.modal-feedback__complete').show();
+    });
+    $('.modal-consultation__send').click(function () {
+        $('.modal-consultation__form').hide();
+        $('.modal-consultation__complete').show();
     });
 
     // Layouts tabs

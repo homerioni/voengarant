@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .test {
+            padding: 10rem;
+        }
+        .test button {
+            margin: 3rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            background-color: gray;
+            font-size: 3rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+<main class="test">
+    <button type="button" class="popup-consultation">
+        Заявка на консультацию
+    </button>
+    <button type="button" class="popup-feedback">
+        Форма обратной связи
+    </button>
+</main>
+
+
+<section class="modal-consultation modal">
+    <div class="modal__bg close"></div>
+    <div class="modal-consultation__content modal__content">
+        <button type="button" class="modal-consultation__close close"></button>
+        <div class="modal-consultation__form">
+            <h2 class="modal-consultation__title">
+                Заявка на консультацию
+            </h2>
+            <p class="modal-consultation__desc">
+                Оставьте заявку на консультацию. Специалист свяжется в течение часа.
+            </p>
+            <form class="consultation__form">
+                <label class="consultation__label">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1901 8.30456C11.7837 7.50453 11.9966 6.66136 11.3252 5.91711C9.81847 3.8088 8.80516 2.50503 8.16956 1.87716C6.96122 0.683508 4.97346 0.844969 3.92694 1.87614C3.36484 2.42999 3.17455 2.62019 2.5974 3.20641C-0.617406 6.42295 1.34315 13.2226 6.55502 18.4396C11.7657 23.6554 18.5647 25.617 21.7863 22.3937C22.3188 21.8802 22.7698 21.4291 23.1254 21.0532C24.151 19.9692 24.3067 18.0691 23.1186 16.8347C22.5096 16.2019 21.2663 15.2375 19.0693 13.666C18.3964 13.0643 17.5986 13.1947 16.8671 13.6746C16.5153 13.9054 16.2592 14.1389 15.7757 14.6229L14.8977 15.5013C14.7821 15.617 13.2118 14.8307 11.6876 13.3049C10.1625 11.7783 9.37665 10.208 9.49174 10.0929C9.7291 9.85555 10.022 9.56253 10.3703 9.2138C10.5237 9.06025 10.5971 8.98591 10.6911 8.88706C10.8871 8.68113 11.0493 8.49424 11.1901 8.30456ZM16.5111 17.1223L17.3892 16.2437C17.6553 15.9773 17.8278 15.8135 17.9681 15.7006C19.8927 17.0827 21.0073 17.9518 21.4626 18.4248C21.7359 18.7089 21.6935 19.2271 21.4558 19.4783C21.127 19.8258 20.6998 20.2533 20.1755 20.759C18.0923 22.8431 12.604 21.2596 8.16871 16.82C3.73206 12.379 2.14937 6.88984 4.21681 4.82126C4.79163 4.23745 4.97375 4.05542 5.52782 3.50948C5.73557 3.30478 6.30145 3.25881 6.55417 3.50846C7.04352 3.99185 7.95125 5.15413 9.28656 7.01421C9.21744 7.10003 9.1311 7.19702 9.02603 7.30744C8.94891 7.38849 8.88466 7.45362 8.74421 7.59421C8.39609 7.94267 8.10351 8.23541 7.86648 8.47243C6.37328 9.9655 7.64494 12.5066 10.0615 14.9255C12.4763 17.3427 15.0184 18.6158 16.5111 17.1223Z"/>
+                    </svg>
+                    <input type="text" placeholder="+7 (___) ___-__-__" class="consultation__input">
+                </label>
+                <button type="button" class="consultation__btn btn-red modal-consultation__send">
+                    Оставить заявку
+                </button>
+            </form>
+            <p class="consultation__sub-text-form consultation__sub-text-form--slim">
+                *Оставляя заявку, вы соглашаетесь на обработку ваших персональных данных
+            </p>
+        </div>
+        <div class="modal-consultation__complete">
+            <h2 class="modal-consultation__title">
+                Заявка отправлена
+            </h2>
+            <p class="modal-consultation__desc">
+                Спасибо за оставленную заявку, специалист свяжется по указанному номеру!
+            </p>
+            <button class="modal-consultation__complete-btn close">Спасибо!</button>
+        </div>
+    </div>
+</section>
+<section class="modal-feedback modal">
+    <div class="modal__bg close"></div>
+    <div class="feedback__content modal__content">
+        <button type="button" class="modal-feedback__close close"></button>
+        <div class="modal-feedback__form">
+            <h2 class="feedback__title">Напишите ваш вопрос</h2>
+            <form class="feedback__form">
+                <label class="feedback__label">
+                    <p class="feedback__label-name">Имя</p>
+                    <input type="text" class="feedback__input">
+                </label>
+                <label class="feedback__label">
+                    <p class="feedback__label-name">Телефон</p>
+                    <input type="tel" class="feedback__input">
+                </label>
+                <label class="feedback__label">
+                    <p class="feedback__label-name">Описание</p>
+                    <textarea class="feedback__textarea"></textarea>
+                </label>
+                <button type="button" class="feedback__btn modal-feedback__send">Отправить</button>
+            </form>
+        </div>
+        <div class="modal-feedback__complete">
+            <h2 class="feedback__title">Ваш вопрос отправлен</h2>
+            <p class="modal-feedback__desc">
+                Специалист свяжется с вами для ответа по указанному вами номеру
+            </p>
+            <button type="button" class="feedback__btn close">Спасибо</button>
+        </div>
+    </div>
+</section>
+<section class="modal-map modal">
+    <div class="modal__bg close"></div>
+    <div class="modal-map__content modal__content">
+        <button type="button" class="modal__close close"></button>
+        <div class="modal-map__map" id="map"></div>
+        <!--        <div id='zoom-in' class='modal-map__zoom modal-map__zoom&#45;&#45;plus'></div>-->
+        <!--        <div id='zoom-out' class='modal-map__zoom modal-map__zoom&#45;&#45;minus'></div>-->
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+</section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

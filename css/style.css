@@ -1291,44 +1291,6 @@ body {
   max-width: 90%;
   max-height: 90%;
 }
-.modal__close {
-  position: absolute;
-  right: -1rem;
-  top: -1rem;
-  z-index: 1;
-  width: 5.4rem;
-  height: 5.4rem;
-  border-radius: 100%;
-  background-color: white;
-  -webkit-box-shadow: -2px 2px 2rem 0.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: -2px 2px 2rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.modal__close:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 1.5rem;
-  height: 1px;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  background-color: black;
-}
-.modal__close:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 1.5rem;
-  height: 1px;
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
-  background-color: black;
-}
-.modal__close:hover {
-  background-color: #bbbbbb;
-}
-
 .modal-map__content {
   width: 86.5rem;
   height: 92rem;
@@ -1447,6 +1409,102 @@ body {
   content: "";
 }
 
+.modal-feedback__close {
+  position: absolute;
+  right: 3.5rem;
+  top: 3.5rem;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.modal-feedback__close:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+  height: 1px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: white;
+}
+.modal-feedback__close:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+  height: 1px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: white;
+}
+.modal-feedback__complete {
+  display: none;
+}
+.modal-feedback__desc {
+  width: 39rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.modal-consultation__content {
+  position: relative;
+  padding: 10rem 14rem 8rem 14rem;
+  background-color: white;
+}
+.modal-consultation__close {
+  position: absolute;
+  right: 3.5rem;
+  top: 3.5rem;
+  z-index: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.modal-consultation__close:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+  height: 1px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #bbbbbb;
+}
+.modal-consultation__close:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3rem;
+  height: 1px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #bbbbbb;
+}
+.modal-consultation__title {
+  margin-bottom: 2.4rem;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+.modal-consultation__desc {
+  width: 30rem;
+  margin-bottom: 2.8rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.modal-consultation__complete {
+  display: none;
+}
+.modal-consultation__complete-btn {
+  padding: 1.4rem 4.8rem;
+  background-color: #EA3758;
+  font-size: 1.6rem;
+  color: white;
+}
+
 @media (max-width: 48em) {
   .modal__content {
     max-width: 95%;
@@ -1498,6 +1556,63 @@ body {
   .modal-map__text {
     font-size: 2.6rem;
     line-height: 3.1rem;
+  }
+  .modal-feedback {
+    padding: 0 4rem;
+  }
+  .modal-feedback .modal__content {
+    max-width: 100%;
+  }
+  .modal-feedback__close {
+    width: 3rem;
+    height: 3rem;
+  }
+  .modal-feedback__close:before {
+    width: 4rem;
+  }
+  .modal-feedback__close:after {
+    width: 4rem;
+  }
+  .modal-feedback__complete {
+    display: none;
+  }
+  .modal-feedback__desc {
+    width: 48rem;
+    font-size: 2.6rem;
+  }
+
+  .modal-consultation {
+    padding: 0 4rem;
+  }
+  .modal-consultation .consultation__sub-text-form {
+    margin-bottom: 0;
+  }
+  .modal-consultation__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 5.6rem 4rem;
+  }
+  .modal-consultation__close {
+    width: 3rem;
+    height: 3rem;
+  }
+  .modal-consultation__close:before {
+    width: 4rem;
+  }
+  .modal-consultation__close:after {
+    width: 4rem;
+  }
+  .modal-consultation__desc {
+    width: 42rem;
+    margin-bottom: 4rem;
+    font-size: 2.6rem;
+  }
+  .modal-consultation__complete .modal-consultation__desc {
+    width: 48rem;
+  }
+  .modal-consultation__complete-btn {
+    padding: 2rem 6.4rem;
+    font-size: 2.6rem;
   }
 }
 .banks-req {
@@ -8968,6 +9083,7 @@ body {
           justify-content: space-between;
 }
 .feedback__content {
+  position: relative;
   width: 83rem;
   padding: 5rem 4rem;
   background-color: #6D78E2;

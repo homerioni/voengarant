@@ -28,41 +28,6 @@
   }
 
   &__close {
-    position: absolute;
-    right: -1rem;
-    top: -1rem;
-    z-index: 1;
-    width: 5.4rem;
-    height: 5.4rem;
-    border-radius: 100%;
-    background-color: white;
-    box-shadow: -2px 2px 2rem 0.5rem rgba(0, 0, 0, 0.2);
-
-    &:before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 1.5rem;
-      height: 1px;
-      transform: translate(-50%, -50%) rotate(45deg);
-      background-color: black;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 1.5rem;
-      height: 1px;
-      transform: translate(-50%, -50%) rotate(-45deg);
-      background-color: black;
-    }
-
-    &:hover {
-      background-color: $gray;
-    }
   }
 }
 
@@ -201,6 +166,116 @@
   }
 }
 
+.modal-feedback {
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 3rem;
+      height: 1px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: white;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 3rem;
+      height: 1px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: white;
+    }
+  }
+
+  &__complete {
+    display: none;
+  }
+
+  &__desc {
+    width: 39rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+}
+
+.modal-consultation {
+  &__content {
+    position: relative;
+    padding: 10rem 14rem 8rem 14rem;
+    background-color: white;
+  }
+
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 3rem;
+      height: 1px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: $gray;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 3rem;
+      height: 1px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: $gray;
+    }
+  }
+
+  &__form {
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  &__desc {
+    width: 30rem;
+    margin-bottom: 2.8rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+
+  &__complete {
+    display: none;
+  }
+
+  &__complete-btn {
+    padding: 1.4rem 4.8rem;
+    background-color: $red;
+    font-size: 1.6rem;
+    color: white;
+  }
+}
+
 @media (max-width: 48em) {
   .modal {
     &__bg {
@@ -328,6 +403,83 @@
       //    content: '';
       //  }
       //}
+    }
+  }
+
+  .modal-feedback {
+    padding: 0 4rem;
+
+    .modal__content {
+      max-width: 100%;
+    }
+
+    &__close {
+      width: 3rem;
+      height: 3rem;
+
+      &:before {
+        width: 4rem;
+      }
+
+      &:after {
+        width: 4rem;
+      }
+    }
+
+    &__complete {
+      display: none;
+    }
+
+    &__desc {
+      width: 48rem;
+      font-size: 2.6rem;
+    }
+  }
+
+  .modal-consultation {
+    padding: 0 4rem;
+
+    .consultation__sub-text-form {
+      margin-bottom: 0;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 100%;
+      padding: 5.6rem 4rem;
+    }
+
+    &__close {
+      width: 3rem;
+      height: 3rem;
+
+      &:before {
+        width: 4rem;
+      }
+
+      &:after {
+        width: 4rem;
+      }
+    }
+
+    &__title {
+    }
+
+    &__desc {
+      width: 42rem;
+      margin-bottom: 4rem;
+      font-size: 2.6rem;
+    }
+
+    &__complete {
+      .modal-consultation__desc {
+        width: 48rem;
+      }
+    }
+
+    &__complete-btn {
+      padding: 2rem 6.4rem;
+      font-size: 2.6rem;
     }
   }
 }
