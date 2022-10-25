@@ -66,6 +66,16 @@
   &__sidebar {
     width: 39.5rem;
   }
+
+  &__img-box {
+    width: 100%;
+    height: auto;
+
+    > img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
 @media (max-width: 48em) {
