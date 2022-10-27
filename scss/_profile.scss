@@ -13,6 +13,10 @@
     margin-right: 6rem;
     padding: 5rem 4rem;
     background-color: white;
+
+    &--fit {
+      min-height: auto;
+    }
   }
 
   &__title {
