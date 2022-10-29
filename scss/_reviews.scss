@@ -8,8 +8,12 @@
     justify-content: space-between;
   }
 
-  &__list {
+  &__list-box {
     width: 83rem;
+  }
+
+  &__list {
+    margin-bottom: 3rem;
   }
 
   &__item {
@@ -55,6 +59,42 @@
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.9rem;
+  }
+
+  &__page-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > a, span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $gray;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    > span {
+      user-select: none;
+      cursor: default;
+    }
+
+    > a {
+      &:hover {
+        color: #3D3D3D;
+      }
+
+      &.active {
+        color: #3D3D3D;
+      }
+    }
   }
 
   &__sidebar {

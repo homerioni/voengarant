@@ -67,11 +67,11 @@
 
   &__ratings {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 4rem;
   }
 
   &__item {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
