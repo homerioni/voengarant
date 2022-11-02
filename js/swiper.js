@@ -59,7 +59,7 @@ const catalog_slider_wide = new Swiper('.catalog-slider__slider--wide', {
             slidesPerView: 1,
         },
         769: {
-            slidesPerView: 5.4,
+            slidesPerView: 5.3,
         },
     },
 });

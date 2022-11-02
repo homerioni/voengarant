@@ -5496,10 +5496,6 @@ body {
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
 }
-.catalog-slider__slider--wide {
-  padding: 0 12rem;
-}
-
 @media (max-width: 48em) {
   .catalog-slider {
     margin-bottom: 12rem;
@@ -5753,9 +5749,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   row-gap: 3.7rem;
   -webkit-column-gap: 5rem;
      -moz-column-gap: 5rem;
