@@ -29,6 +29,7 @@
 
   &__item {
     width: 23rem;
+    cursor: pointer;
 
     &:hover {
       filter: brightness(0.9);

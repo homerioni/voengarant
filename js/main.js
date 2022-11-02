@@ -65,6 +65,24 @@ $(document).ready(function () {
         $('body').addClass('lock');
         $('.modal-consultation').css('display', 'flex').hide().fadeIn();
     });
+    $('.popup-img').click(function () {
+        $('body').addClass('lock');
+        $('.modal-img__content img').attr('src', $(this).attr('imgURL'));
+        $('.modal-img').css('display', 'flex').hide().fadeIn();
+        $('.modal-img__close').css({
+            'right': ($('.modal-img__content img').position().left) + 'px',
+            'top': ($('.modal-img__content img').position().top) + 'px',
+        });
+    });
+    click(function () {
+        $('body').addClass('lock');
+        $('.modal-img__content img').attr('src', $(this).attr('src'));
+        $('.modal-img').css('display', 'flex').hide().fadeIn();
+        $('.modal-img__close').css({
+            'right': ($('.modal-img__content img').position().left) + 'px',
+            'top': ($('.modal-img__content img').position().top) + 'px',
+        });
+    });
     $('.modal-feedback__send').click(function () {
         $('.modal-feedback__form').hide();
         $('.modal-feedback__complete').show();

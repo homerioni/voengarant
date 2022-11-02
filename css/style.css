@@ -1506,6 +1506,69 @@ body {
   color: white;
 }
 
+.modal-img__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 90%;
+}
+.modal-img__content > img {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal-img__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-img__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
+  height: 5rem;
+  -webkit-transform: translate(110%, -110%);
+          transform: translate(110%, -110%);
+  cursor: pointer;
+}
+.modal-img__close:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5rem;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+.modal-img__close:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5rem;
+  height: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: white;
+}
+
 @media (max-width: 48em) {
   .modal__content {
     max-width: 95%;
@@ -1614,6 +1677,30 @@ body {
   .modal-consultation__complete-btn {
     padding: 2rem 6.4rem;
     font-size: 2.6rem;
+  }
+
+  .modal-img__content {
+    height: 85%;
+    width: 85%;
+  }
+  .modal-img__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modal-img__close {
+    width: 6rem;
+    height: 6rem;
+    -webkit-transform: translate(70%, -130%);
+            transform: translate(70%, -130%);
+  }
+  .modal-img__close:before {
+    width: 6rem;
+  }
+  .modal-img__close:after {
+    width: 6rem;
   }
 }
 .banks-req {
@@ -8511,6 +8598,7 @@ body {
 }
 .messages__item {
   width: 23rem;
+  cursor: pointer;
 }
 .messages__item:hover {
   -webkit-filter: brightness(0.9);
