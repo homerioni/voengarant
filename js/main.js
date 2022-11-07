@@ -249,5 +249,8 @@ $(document).ready(function () {
     }).focusout(function () {
         $(this).parent().removeClass('active');
     });
+    $('.user__checkbox-label input').change(function () {
+        $(this).parent().find('.user__checkbox-icon').toggleClass('active');
+    });
 
 });
